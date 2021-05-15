@@ -1,0 +1,15 @@
+$font-family-base: 'Montserrat', serif;
+$font-family-citas: 'Alegreya', serif;
+$font-family-headers: 'Vollkorn', serif;
+
+$primary: #17a095;
+$secondary: #6590aa;
+$success:  #c49815;
+$dark:#444;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "dark":       $dark
+);

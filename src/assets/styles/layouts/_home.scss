@@ -1,0 +1,160 @@
+/*------------------------------------*\
+  #REGLAS POSTER
+\*------------------------------------*/
+
+.poster__cita {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  overflow: hidden;
+  font-family: $font-family-citas;
+  font-size: 1.2em;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.4em;
+  }
+  @media only screen and (min-width: 1024px) {
+    font-size: 1.6em;
+  }
+  font-style: italic;
+}
+
+.poster__autor-cita {
+  font-size: .6em;
+  @media only screen and (min-width: 768px) {
+    font-size: .8em;
+  }
+  font-weight: 700;
+}
+
+
+.poster__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster__titulo {
+  font-family: $font-family-headers;
+  font-style: italic;
+}
+
+//Ajustes para Internet Explorer o navegadores sin grid
+  @media only screen and (min-width: 768px) {
+    .poster__menu {
+      float: left;
+      width: 40%;
+      margin: 2em;
+    }
+
+    .poster__img {
+      width: 50%;
+    }
+
+    .poster__img1 {
+      margin-top: 2em;
+    }
+
+    .poster__img2 {
+      margin-top: 2em;
+    }
+
+    .poster__cita {
+      float: right;
+      width: 40%;
+    }
+  }  
+
+
+@supports (display:grid) {
+  
+  @media only screen and (min-width: 768px) {
+    .poster {
+      display: grid;
+      grid-template-columns: calc(2em + .5vw) 1fr .6fr 2em .6fr 1fr calc(2em + .5vw);
+      grid-template-rows: 28vh 12vh 2em 12vh 28vh;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+
+    .poster__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .poster__img1 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
+      float: unset;
+    }
+
+    .poster__img2 {
+      margin-top: 0;
+      grid-column: 5 / 8;
+      grid-row: 4 / 6;
+    }
+
+    .poster__titulo {
+      writing-mode: vertical-rl;
+      grid-column: 7;
+      grid-row: 1 / 3;
+      float: unset;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .poster__cita {
+      z-index: 2;
+      float: unset;
+      width: unset;
+      padding: 1em;
+      margin: 0;
+      margin-left: .5em;
+      border-radius: 1em;
+      grid-column: 3/6;
+      grid-row: 2/5;
+    }
+
+    .poster__menu {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-end;
+      float: unset;
+      width: unset;
+      margin: 0;
+      grid-column: 2;
+      grid-row: 3/6;
+    }
+
+    .poster__item {
+      padding: .6em;
+      font-size: 1.2em;
+    }
+
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .poster {
+      margin-right: 10%;
+      margin-left: 10%;
+      grid-template-rows: 28vh 10vh 2em 10vh 28vh;
+    }
+  }
+}
+
+@layer components {
+  .subtitle {
+    @apply font-serif-header text-4xl text-yellow-300 text-center;
+  }
+
+  .subtitle2 {
+    @apply font-serif-header text-2xl text-secondary my-4;
+  }
+
+  .category-list {
+    @apply m-0 px-2 list-none md:flex md:flex-row md:flex-wrap md:justify-center;    
+  }
+
+  .category-item {
+    @apply mb-8 md:flex md:flex-col md:justify-between md:w-2/5 xl:w-1/4 mx-4 shadow-2xl;
+  }
+}
