@@ -142,6 +142,11 @@
 }
 
 @layer components {
+
+  .title {
+    @apply pl-2 mb-0 text-2xl font-serif-header font-bold;
+  }
+
   .subtitle {
     @apply font-serif-header text-4xl text-yellow-300 text-center;
   }
