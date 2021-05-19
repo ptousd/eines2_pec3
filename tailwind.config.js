@@ -22,7 +22,7 @@ module.exports = {
         cyan: colors.cyan,
         'primary': '#007167',
         'secondary': '#6590aa',
-        dark: '#222',
+        dark: '#000',
         yellow: {
           300: '#8f6a00'
         },
