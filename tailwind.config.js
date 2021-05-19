@@ -20,11 +20,11 @@ module.exports = {
         indigo: colors.indigo,
         lima: colors.lime,
         cyan: colors.cyan,
-        'primary': '#17a095',
+        'primary': '#007167',
         'secondary': '#6590aa',
-        dark: '#666',
+        dark: '#222',
         yellow: {
-          300: '#c49815'
+          300: '#8f6a00'
         },
     }
   },
