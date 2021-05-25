@@ -6,7 +6,6 @@
   padding-top: 3em;
   padding-bottom: 1em;
   overflow: hidden;
-  font-family: $font-family-citas;
   font-size: 1.2em;
   @media only screen and (min-width: 768px) {
     font-size: 1.4em;
@@ -33,7 +32,6 @@
 }
 
 .poster__titulo {
-  font-family: $font-family-headers;
   font-style: italic;
 }
 
@@ -138,28 +136,5 @@
       margin-left: 10%;
       grid-template-rows: 28vh 10vh 2em 10vh 28vh;
     }
-  }
-}
-
-@layer components {
-
-  .title {
-    @apply pl-2 mb-0 text-2xl font-serif-header font-bold;
-  }
-
-  .subtitle {
-    @apply font-serif-header text-4xl text-yellow-300 text-center;
-  }
-
-  .subtitle2 {
-    @apply font-serif-header text-2xl text-secondary my-4;
-  }
-
-  .category-list {
-    @apply m-0 px-2 list-none md:flex md:flex-row md:flex-wrap md:justify-center;    
-  }
-
-  .category-item {
-    @apply mb-8 md:flex md:flex-col md:justify-between md:w-2/5 xl:w-1/4 mx-4 shadow-2xl;
   }
 }

@@ -8,8 +8,6 @@
  * Import variables
  */
 
-@import 'variables';
-
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -26,7 +24,7 @@
  */
 
 @import 'layouts/home';
-
+@import 'layouts/apply';
 /**
  * Do NOT include anything else in this file!
  */

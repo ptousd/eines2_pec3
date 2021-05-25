@@ -7,8 +7,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-       'serif': ['Montserrat', 'serif'],
-       'serif-header': ['Vollkorn', 'serif'],
+      'serif': ['Montserrat', 'serif'],
+      'serif-header': ['Vollkorn', 'serif'],
+      'citas' : ['Alegreya', 'serif']
       },
     minHeight: {
        '52': '13rem',
